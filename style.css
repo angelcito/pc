@@ -1,0 +1,554 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400");
+
+* {
+    color: #0026ff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif !important;
+       background-image: url(https://img.pikbest.com/wp/202344/noir-elegant-textured-background-for-a-modern-twist_9916704.jpg!w700wp) ;
+       width: 6000;
+       height: 20000;
+       background-repeat: calc();
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 100px 0;
+    background: #000000;
+}
+
+.yoyo {
+    position: relative;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.yoyo:hover {
+    transform: scale(1.1);
+}
+
+.col-sm-4:nth-child(1) .yoyo,
+.col-sm-4:nth-child(1) .yoyo .title .fas {
+    background: linear-gradient(-45deg, #0026ff, #00aeff);
+}
+
+.col-sm-4:nth-child(2) .yoyo,
+.col-sm-4:nth-child(2) .yoyo .title .fas {
+    background: linear-gradient(-45deg, #0026ff, #3700ff);
+}
+
+.col-sm-4:nth-child(3) .yoyo,
+.col-sm-4:nth-child(3) .yoyo .title .fas {
+    background: linear-gradient(-45deg, #0026ff, #00aeff);
+}
+
+.yoyo:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: rgba(255, 255, 255, 0);
+    z-index: 1;
+    transform: skewY(-5deg) scale(1.5);
+}
+
+.title .fas {
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.title h2 {
+    position: relative;
+    margin: 20px 0 0;
+    padding: 0;
+    color: #000000;
+    font-size: 28px;
+    z-index: 2;
+}
+
+.price {
+    position: relative;
+    z-index: 2;
+}
+
+.price h4 {
+    margin: 0;
+    padding: 20px 0;
+    color: #000000;
+    font-size: 60px;
+}
+
+.option {
+    position: relative;
+    z-index: 2;
+}
+
+.option ul {
+    margin: 0;
+    padding: 0;
+}
+
+.option ul li {
+    margin: 0 0 10px;
+    padding: 0;
+    list-style: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.card1 a {
+    position: relative;
+    z-index: 2;
+    background: rgb(0, 0, 0);
+    color: #f7f7f7;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    display: block;
+    text-align: center;
+    margin: 20px auto 0;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card1 a:hover {
+    text-decoration: none;
+}
+
+.bttn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+
+.contenedor {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.contenedor .cartas {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background: rgb(0, 0, 0);
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgb(0, 89, 255);
+}
+
+.contenedor .cartas:hover {
+    height: 400px;
+}
+
+.contenedor .cartas .caja-img {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.contenedor .cartas:hover .caja-img {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(255, 255, 255, 0.2);
+}
+
+.contenedor .cartas .caja-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor .cartas .contenido {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.contenedor .cartas:hover .contenido {
+    top: 130px;
+    height: 250px;
+}
+
+.contenedor .cartas .contenido h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.contenedor .cartas .contenido p {
+    color: rgb(255, 255, 255);
+}
+
+.contenedor .cartas .contenido a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: var(--clr);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.contenedor .cartas .contenido a:hover {
+    opacity: 0.8;
+    background-color: #1100ff;
+    color: rgb(0, 38, 255);
+}
+
+@media (max-width: 480px) {
+    .contenedor .cartas {
+        width: 230px;
+        border-radius: 15px;
+    }
+
+    .contenedor .cartas .caja-img {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .contenedor .cartas .contenido p {
+        font-size: 0.8rem;
+    }
+
+    .contenedor .cartas .contenido a {
+        font-size: 0.9rem;
+    }
+}
+
+/*Efecto hover*/
+
+.container {
+    display: flex;
+}
+
+.card1 {
+    flex: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card1 img {
+    object-fit: cover;
+    filter: grayscale(1);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.card1:hover {
+    flex: 10;
+    transition: 0.5s;
+}
+
+.card1:hover img {
+    filter: none;
+    transition: 0.5s;
+}
+
+/*ahahahahhahahahahahahahhahahahahahahahaha*/
+
+.card-container {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    align-self: center;
+  }
+  
+  .card {
+    margin: 20px 40px 40px 20px;
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5s;
+  }
+  
+  .card .front {
+    border: solid 10px whitesmoke;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: 0.5s;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+      5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  }
+  
+  .card:hover .front {
+    transform: rotateY(-180deg);
+  }
+  
+  .card .back {
+    border: solid 10px whitesmoke;
+    width: 100%;
+    height: 100%;
+    background: #1d1d1d;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transition: 0.5s;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+      5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  
+  
+  }
+  
+  .card:hover .back {
+    transform: rotateY(0deg);
+  }
+  
+  .card .back .details {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .card .back .details .caption {
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+
+  
+  .card .back .details .caption,
+  h2,
+  span {
+    color: whitesmoke;
+  }
+  
+  .social-icon {
+    padding: 10px;
+  }
+  
+  .social-icon a {
+    display: inline-block;
+    width: 36px;
+    background: #333;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+  
+  .social-icon a .fab {
+    line-height: 36px;
+  }
+  
+  .social-icon a:hover {
+    background: rgb(104, 240, 215);
+  }
+  
+  .social-icon a:hover i {
+    transition: 0.5s;
+    color: #333;
+  }
+
+  /*Carta precio*/
+
+  /*Nav*/
+
+  
+header{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+ 
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.producto {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    flex: 20px;
+    box-sizing: border-box;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/*Contacto*/
+
+header {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    text-align: center;
+}
+
+header {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+   display: inline;
+   margin-right: 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+ 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    margin: 20px 0 ;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    background-color: rgb(17, 16, 17);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: rgb(225, 186, 228);
+}
+
+footer { 
+    background-color: rgb(253, 220, 249);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+  
