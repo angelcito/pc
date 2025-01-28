@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400");
 
 * {
-    color: #0026ff;
+    color: #ff0000;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif !important;
-       background-image: url(https://img.pikbest.com/wp/202344/noir-elegant-textured-background-for-a-modern-twist_9916704.jpg!w700wp) ;
+       background-image: url(https://images.unsplash.com/photo-1533136036465-1861830963f6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9uZG8lMjBuZWdybyUyMHklMjByb2pvfGVufDB8fDB8fHww) ;
        width: 6000;
        height: 20000;
        background-repeat: calc();
@@ -164,7 +164,7 @@ section {
     background: rgb(0, 0, 0);
     border-radius: 20px;
     transition: 0.5s;
-    box-shadow: 0 35px 80px rgb(0, 89, 255);
+    box-shadow: 0 35px 80px rgb(255, 0, 0);
 }
 
 .contenedor .cartas:hover {
@@ -236,8 +236,8 @@ section {
 
 .contenedor .cartas .contenido a:hover {
     opacity: 0.8;
-    background-color: #1100ff;
-    color: rgb(0, 38, 255);
+    background-color: #000000;
+    color: rgb(255, 255, 255);
 }
 
 @media (max-width: 480px) {
@@ -551,4 +551,132 @@ footer {
 
 
 
-  
+    
+
+
+section-renamed {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 100px 0;
+    background: #000000;
+}
+
+.card-renamed {
+    position: relative;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.card-renamed:hover {
+    transform: scale(1.1);
+}
+
+.col-sm-4:nth-child(1) .card-renamed,
+.col-sm-4:nth-child(1) .card-renamed .title-renamed .fas-renamed {
+    background: linear-gradient(-45deg, #CD7F32, #CD7F32);
+}
+
+.col-sm-4:nth-child(2) .card-renamed,
+.col-sm-4:nth-child(2) .card-renamed .title-renamed .fas-renamed {
+    background: linear-gradient(-45deg, #C0C0C0, #C0C0C0);
+}
+
+.col-sm-4:nth-child(3) .card-renamed,
+.col-sm-4:nth-child(3) .card-renamed .title-renamed .fas-renamed {
+    background: linear-gradient(-45deg, #FFD700, #FFD700);
+}
+
+.card-renamed:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    transform: skewY(-5deg) scale(1.5);
+}
+
+.title-renamed .fas-renamed {
+    color: #fff;
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.title-renamed h2 {
+    position: relative;
+    margin: 20px 0 0;
+    padding: 0;
+    color: #000000;
+    font-size: 28px;
+    z-index: 2;
+}
+
+.price-renamed {
+    position: relative;
+    z-index: 2;
+}
+
+.price-renamed h4 {
+    margin: 0;
+    padding: 20px 0;
+    color: #000000;
+    font-size: 60px;
+}
+
+.option-renamed {
+    position: relative;
+    z-index: 2;
+}
+
+.option-renamed ul {
+    margin: 0;
+    padding: 0;
+}
+
+.option-renamed ul li {
+    margin: 0 0 10px;
+    padding: 0;
+    list-style: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+.card-renamed a {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    color: #262626;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    display: block;
+    text-align: center;
+    margin: 20px auto 0;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-renamed a:hover {
+    text-decoration: none;
+}
+
+.bttn-renamed:hover {
+    background-color: #000000;
+    color: #66fcf1;
+}
